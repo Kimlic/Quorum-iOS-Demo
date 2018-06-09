@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17752EA120CC3F2800415E97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17752E9F20CC3F2800415E97 /* Main.storyboard */; };
+		17DB5D9F20CC3E0A00AC6E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DB5D9E20CC3E0A00AC6E46 /* Assets.xcassets */; };
+		17DB5DA220CC3E0A00AC6E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DB5DA020CC3E0A00AC6E46 /* LaunchScreen.storyboard */; };
+		17DB5DAD20CC3E0A00AC6E46 /* Quorum_iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB5DAC20CC3E0A00AC6E46 /* Quorum_iOS_DemoTests.swift */; };
+		17DB5DB820CC3E5700AC6E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB5DB720CC3E5700AC6E46 /* AppDelegate.swift */; };
+		17DB5DBC20CC3E5E00AC6E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB5DBA20CC3E5E00AC6E46 /* ViewController.swift */; };
+		17DB5DBD20CC3E5E00AC6E46 /* SimpleStorageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB5DBB20CC3E5E00AC6E46 /* SimpleStorageContract.swift */; };
+		C4CBE9D98656459E72A35E2C /* Pods_Quorum_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D1CB55A9538B28F6ABDDD7 /* Pods_Quorum_iOS_Demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17DB5DA920CC3E0A00AC6E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17DB5D8C20CC3E0900AC6E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17DB5D9320CC3E0900AC6E46;
+			remoteInfo = "Quorum-iOS-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17752EA020CC3F2800415E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17DB5D9420CC3E0900AC6E46 /* Quorum-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quorum-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DB5D9E20CC3E0A00AC6E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17DB5DA120CC3E0A00AC6E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17DB5DA320CC3E0A00AC6E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17DB5DA820CC3E0A00AC6E46 /* Quorum-iOS-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quorum-iOS-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DB5DAC20CC3E0A00AC6E46 /* Quorum_iOS_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quorum_iOS_DemoTests.swift; sourceTree = "<group>"; };
+		17DB5DAE20CC3E0A00AC6E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17DB5DB720CC3E5700AC6E46 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17DB5DBA20CC3E5E00AC6E46 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17DB5DBB20CC3E5E00AC6E46 /* SimpleStorageContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleStorageContract.swift; sourceTree = "<group>"; };
+		1A1283B3A715487DA97C7C12 /* Pods-Quorum-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quorum-iOS-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quorum-iOS-Demo/Pods-Quorum-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		70D1CB55A9538B28F6ABDDD7 /* Pods_Quorum_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quorum_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34ABD440501837CE6C9F2A6 /* Pods-Quorum-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quorum-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quorum-iOS-Demo/Pods-Quorum-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17DB5D9120CC3E0900AC6E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4CBE9D98656459E72A35E2C /* Pods_Quorum_iOS_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17DB5DA520CC3E0A00AC6E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17DB5D8B20CC3E0900AC6E46 = {
+			isa = PBXGroup;
+			children = (
+				17DB5D9620CC3E0900AC6E46 /* Quorum-iOS-Demo */,
+				17DB5DAB20CC3E0A00AC6E46 /* Quorum-iOS-DemoTests */,
+				17DB5D9520CC3E0900AC6E46 /* Products */,
+				496FC2847F4BAF6D689F3A42 /* Pods */,
+				DB88D4E988A20E17276DF5DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17DB5D9520CC3E0900AC6E46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17DB5D9420CC3E0900AC6E46 /* Quorum-iOS-Demo.app */,
+				17DB5DA820CC3E0A00AC6E46 /* Quorum-iOS-DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17DB5D9620CC3E0900AC6E46 /* Quorum-iOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				17DB5DB720CC3E5700AC6E46 /* AppDelegate.swift */,
+				17DB5DB920CC3E5E00AC6E46 /* Classes */,
+				17DB5D9E20CC3E0A00AC6E46 /* Assets.xcassets */,
+				17752E9F20CC3F2800415E97 /* Main.storyboard */,
+				17DB5DA020CC3E0A00AC6E46 /* LaunchScreen.storyboard */,
+				17DB5DA320CC3E0A00AC6E46 /* Info.plist */,
+			);
+			path = "Quorum-iOS-Demo";
+			sourceTree = "<group>";
+		};
+		17DB5DAB20CC3E0A00AC6E46 /* Quorum-iOS-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				17DB5DAC20CC3E0A00AC6E46 /* Quorum_iOS_DemoTests.swift */,
+				17DB5DAE20CC3E0A00AC6E46 /* Info.plist */,
+			);
+			path = "Quorum-iOS-DemoTests";
+			sourceTree = "<group>";
+		};
+		17DB5DB920CC3E5E00AC6E46 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17DB5DBA20CC3E5E00AC6E46 /* ViewController.swift */,
+				17DB5DBB20CC3E5E00AC6E46 /* SimpleStorageContract.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		496FC2847F4BAF6D689F3A42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A1283B3A715487DA97C7C12 /* Pods-Quorum-iOS-Demo.debug.xcconfig */,
+				B34ABD440501837CE6C9F2A6 /* Pods-Quorum-iOS-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB88D4E988A20E17276DF5DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70D1CB55A9538B28F6ABDDD7 /* Pods_Quorum_iOS_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17DB5D9320CC3E0900AC6E46 /* Quorum-iOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17DB5DB120CC3E0A00AC6E46 /* Build configuration list for PBXNativeTarget "Quorum-iOS-Demo" */;
+			buildPhases = (
+				4EB2B408F1D2F5DBF3B85EBA /* [CP] Check Pods Manifest.lock */,
+				17DB5D9020CC3E0900AC6E46 /* Sources */,
+				17DB5D9120CC3E0900AC6E46 /* Frameworks */,
+				17DB5D9220CC3E0900AC6E46 /* Resources */,
+				826B16C211826A9444B0F9C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quorum-iOS-Demo";
+			productName = "Quorum-iOS-Demo";
+			productReference = 17DB5D9420CC3E0900AC6E46 /* Quorum-iOS-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17DB5DA720CC3E0A00AC6E46 /* Quorum-iOS-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17DB5DB420CC3E0A00AC6E46 /* Build configuration list for PBXNativeTarget "Quorum-iOS-DemoTests" */;
+			buildPhases = (
+				17DB5DA420CC3E0A00AC6E46 /* Sources */,
+				17DB5DA520CC3E0A00AC6E46 /* Frameworks */,
+				17DB5DA620CC3E0A00AC6E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17DB5DAA20CC3E0A00AC6E46 /* PBXTargetDependency */,
+			);
+			name = "Quorum-iOS-DemoTests";
+			productName = "Quorum-iOS-DemoTests";
+			productReference = 17DB5DA820CC3E0A00AC6E46 /* Quorum-iOS-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17DB5D8C20CC3E0900AC6E46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Pharos Production Inc.";
+				TargetAttributes = {
+					17DB5D9320CC3E0900AC6E46 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+					17DB5DA720CC3E0A00AC6E46 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 17DB5D9320CC3E0900AC6E46;
+					};
+				};
+			};
+			buildConfigurationList = 17DB5D8F20CC3E0900AC6E46 /* Build configuration list for PBXProject "Quorum-iOS-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17DB5D8B20CC3E0900AC6E46;
+			productRefGroup = 17DB5D9520CC3E0900AC6E46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17DB5D9320CC3E0900AC6E46 /* Quorum-iOS-Demo */,
+				17DB5DA720CC3E0A00AC6E46 /* Quorum-iOS-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17DB5D9220CC3E0900AC6E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17752EA120CC3F2800415E97 /* Main.storyboard in Resources */,
+				17DB5DA220CC3E0A00AC6E46 /* LaunchScreen.storyboard in Resources */,
+				17DB5D9F20CC3E0A00AC6E46 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17DB5DA620CC3E0A00AC6E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EB2B408F1D2F5DBF3B85EBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quorum-iOS-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		826B16C211826A9444B0F9C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quorum-iOS-Demo/Pods-Quorum-iOS-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Quorum/Quorum.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/libsodium/libsodium.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1_ios/secp256k1_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quorum.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libsodium.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quorum-iOS-Demo/Pods-Quorum-iOS-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17DB5D9020CC3E0900AC6E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DB5DBC20CC3E5E00AC6E46 /* ViewController.swift in Sources */,
+				17DB5DBD20CC3E5E00AC6E46 /* SimpleStorageContract.swift in Sources */,
+				17DB5DB820CC3E5700AC6E46 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17DB5DA420CC3E0A00AC6E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DB5DAD20CC3E0A00AC6E46 /* Quorum_iOS_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17DB5DAA20CC3E0A00AC6E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17DB5D9320CC3E0900AC6E46 /* Quorum-iOS-Demo */;
+			targetProxy = 17DB5DA920CC3E0A00AC6E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17752E9F20CC3F2800415E97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17752EA020CC3F2800415E97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17DB5DA020CC3E0A00AC6E46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17DB5DA120CC3E0A00AC6E46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17DB5DAF20CC3E0A00AC6E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17DB5DB020CC3E0A00AC6E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17DB5DB220CC3E0A00AC6E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A1283B3A715487DA97C7C12 /* Pods-Quorum-iOS-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quorum-iOS-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pharosproduction.Quorum-iOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17DB5DB320CC3E0A00AC6E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34ABD440501837CE6C9F2A6 /* Pods-Quorum-iOS-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quorum-iOS-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pharosproduction.Quorum-iOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17DB5DB520CC3E0A00AC6E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quorum-iOS-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pharosproduction.Quorum-iOS-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quorum-iOS-Demo.app/Quorum-iOS-Demo";
+			};
+			name = Debug;
+		};
+		17DB5DB620CC3E0A00AC6E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quorum-iOS-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pharosproduction.Quorum-iOS-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quorum-iOS-Demo.app/Quorum-iOS-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17DB5D8F20CC3E0900AC6E46 /* Build configuration list for PBXProject "Quorum-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17DB5DAF20CC3E0A00AC6E46 /* Debug */,
+				17DB5DB020CC3E0A00AC6E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17DB5DB120CC3E0A00AC6E46 /* Build configuration list for PBXNativeTarget "Quorum-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17DB5DB220CC3E0A00AC6E46 /* Debug */,
+				17DB5DB320CC3E0A00AC6E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17DB5DB420CC3E0A00AC6E46 /* Build configuration list for PBXNativeTarget "Quorum-iOS-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17DB5DB520CC3E0A00AC6E46 /* Debug */,
+				17DB5DB620CC3E0A00AC6E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17DB5D8C20CC3E0900AC6E46 /* Project object */;
+}
