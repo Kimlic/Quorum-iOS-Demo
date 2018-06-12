@@ -11,7 +11,9 @@ import Quorum
 
 class ViewController: UIViewController {
     
-    private lazy var quorumManager = Quorum()
+    private lazy var configCustom = Web3Config(scheme: "http", host: "127.0.0.4", port: 22005, networkId: 10)
+    private lazy var configLocal = Web3ParamsLocalhost()    
+    private lazy var quorumManager = Quorum(configCustom)
     private lazy var simpleStorageContract = SimpleStorageContract(address: "0xa29495d736697ced921cf5fca1ea38dd9337755c")
 
     @IBOutlet weak var imageView: UIImageView!
