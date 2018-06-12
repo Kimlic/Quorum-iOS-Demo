@@ -11,8 +11,8 @@ import Quorum
 
 class ViewController: UIViewController {
     
-    private lazy var configCustom = Web3Config(scheme: "http", host: "127.0.0.4", port: 22005, networkId: 10)
-    private lazy var configLocal = Web3ParamsLocalhost()    
+    private lazy var configCustom = Web3Config(scheme: "http", host: "127.0.0.1", port: 22005, networkId: 10)
+//    private lazy var configLocal = Web3ParamsLocalhost()    
     private lazy var quorumManager = Quorum(configCustom)
     private lazy var simpleStorageContract = SimpleStorageContract(address: "0xa29495d736697ced921cf5fca1ea38dd9337755c")
 
@@ -36,14 +36,22 @@ class ViewController: UIViewController {
         let value = try! quorumManager.call(contract: simpleStorageContract, method: simpleStorageContract.getters.getValue)
         print("STORED VALUE: ", value, "\n")
 
-        let receiptSet = try! quorumManager.send(contract: simpleStorageContract, method: simpleStorageContract.transactions.setValue, params: [10])
-        print("RECEIPT SET: ", receiptSet, "\n")
+        do {
+            let receiptSet = try quorumManager.send(contract: simpleStorageContract, method: simpleStorageContract.transactions.setValue, params: [10])
+            print("RECEIPT SET: ", receiptSet, "\n")
+        } catch let err {
+            print("CATCH: ", err, "\n")
+        }
 
         let newValue = try! quorumManager.call(contract: simpleStorageContract, method: "get")
         print("NEW STORED VALUE: ", newValue, "\n")
         
-        let receiptSetDefault = try! quorumManager.send(contract: simpleStorageContract, method: simpleStorageContract.transactions.setDefaultValue)
-        print("RECEIPT SETDEFAULT: ", receiptSetDefault, "\n")
+        do {
+            let receiptSetDefault = try quorumManager.send(contract: simpleStorageContract, method: simpleStorageContract.transactions.setDefaultValue)
+            print("RECEIPT SETDEFAULT: ", receiptSetDefault, "\n")
+        } catch let err {
+            print("CATCH: ", err, "\n")
+        }
         
         let newNewValue = try! quorumManager.call(contract: simpleStorageContract, method: "get")
         print("NEW NEW STORED VALUE: ", newNewValue, "\n")
