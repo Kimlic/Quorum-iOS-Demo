@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17752EA120CC3F2800415E97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17752E9F20CC3F2800415E97 /* Main.storyboard */; };
+		177D5312212B087600417262 /* AccountStorageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D5311212B087600417262 /* AccountStorageAdapter.swift */; };
 		17DB5D9F20CC3E0A00AC6E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DB5D9E20CC3E0A00AC6E46 /* Assets.xcassets */; };
 		17DB5DA220CC3E0A00AC6E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DB5DA020CC3E0A00AC6E46 /* LaunchScreen.storyboard */; };
 		17DB5DAD20CC3E0A00AC6E46 /* Quorum_iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB5DAC20CC3E0A00AC6E46 /* Quorum_iOS_DemoTests.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		17752EA020CC3F2800415E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		177D5311212B087600417262 /* AccountStorageAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStorageAdapter.swift; sourceTree = "<group>"; };
 		17DB5D9420CC3E0900AC6E46 /* Quorum-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quorum-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DB5D9E20CC3E0A00AC6E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17DB5DA120CC3E0A00AC6E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				17DB5DBA20CC3E5E00AC6E46 /* ViewController.swift */,
 				17DB5DBB20CC3E5E00AC6E46 /* SimpleStorageContract.swift */,
+				177D5311212B087600417262 /* AccountStorageAdapter.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17DB5DBC20CC3E5E00AC6E46 /* ViewController.swift in Sources */,
+				177D5312212B087600417262 /* AccountStorageAdapter.swift in Sources */,
 				17DB5DBD20CC3E5E00AC6E46 /* SimpleStorageContract.swift in Sources */,
 				17DB5DB820CC3E5700AC6E46 /* AppDelegate.swift in Sources */,
 			);

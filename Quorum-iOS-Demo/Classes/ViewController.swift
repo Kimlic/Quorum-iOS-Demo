@@ -11,24 +11,52 @@ import Quorum
 
 class ViewController: UIViewController {
     
-    private lazy var configCustom = Web3Config(scheme: "http", host: "127.0.0.1", port: 22000, path:"/api/proxy", networkId: 10)
-//    private lazy var configLocal = Web3ParamsLocalhost()    
+    // Variables
+    
+    private lazy var configCustom = Web3Config(scheme: "http", host: "127.0.0.1", port: 22000, path:"", networkId: 10)
+    private lazy var configKimlic = Web3Config(scheme: "http", host: "51.141.120.215", port: 22000, path:"", networkId: 10)
     private lazy var quorumManager = Quorum(configCustom)
-    private lazy var simpleStorageContract = SimpleStorageContract(address: "0xa29495d736697ced921cf5fca1ea38dd9337755c")
-
+    
     @IBOutlet weak var imageView: UIImageView!
 
+    // Life
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        quorum()
+//        demo()
+        kimlic()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    private func quorum() {
+    // Private
+    
+    private func kimlic() {
+        let accountStorageAdapter = try! AccountStorageAdapter(address: "0xBA5fA42b2E69258F7aD5b551F90DD3E2242f2637")
+        let mnemonic = try! Quorum.mnemonic()
+        print("MNEMONIC: ", mnemonic, "\n")
+        print("USER ADDR: \(quorumManager.accountAddress())")
+        try! Quorum.keystoreWith(mnemonic: mnemonic)
+
+        do {
+            let value = "+380997762791"
+            let type = "phone"
+            let param = "'{\"\(type)\":\"\(value.sha256())\"}'"
+            let params = [param, type] as [Any]
+            let method = accountStorageAdapter.transactions.setFieldMainData
+            let receiptSet = try quorumManager.send(contract: accountStorageAdapter, method: method, params: params)
+            print("RECEIPT SET: ", receiptSet, "\n")
+        } catch let err {
+            print("CATCH: ", err, "\n")
+        }
+    }
+    
+    private func demo() {
+        let simpleStorageContract = try! SimpleStorageContract(address: "0x5fbdbafb16c542cd8ec87ed6e62498bfa1206cd0")
+        
         let mnemonic = try! Quorum.mnemonic()
         print("MNEMONIC: ", mnemonic, "\n")
         try! Quorum.keystoreWith(mnemonic: mnemonic)
